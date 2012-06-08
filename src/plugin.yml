@@ -1,0 +1,29 @@
+name: DeathGame
+main: me.bibo38.DeathGame.DeathGame
+version: 0.76
+commands:
+  game:
+    description: DeathGame Plugin
+    usage: /game help
+permissions:
+  deathgame.help:
+    description: Allows you to view the help
+    default: true
+  deathgame.join:
+    description: Allows you to join a Game
+    default: true
+  deathgame.setstart:
+    description: Allows you to set the Start Warp
+    default: op
+  deathgame.setend:
+    description: Allows you to set the End Warp
+    default: op
+  deathgame.stop:
+    description: Allows you to stop a game
+    default: op
+  deathgame.start:
+    description: Allows you to start a game
+    default: op
+  deathgame.setarea:
+    description: Allows you to set the game Area
+    default: op
