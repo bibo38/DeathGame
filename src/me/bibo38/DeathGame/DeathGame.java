@@ -20,7 +20,6 @@ public class DeathGame extends JavaPlugin
 {
 	private Logger log;
 	private PluginDescriptionFile pdFile;
-	private UpdateAgent update;
 	
 	private Spiel hauptspiel = null;
 	private Arena hauptarena;
@@ -34,8 +33,6 @@ public class DeathGame extends JavaPlugin
 		cfg = this.getConfig();
 		cfg.options().copyDefaults(true);
 		this.saveConfig();
-		
-		update = new UpdateAgent(this, log, pdFile);
 		
 		hauptarena = new Arena();
 		
@@ -239,11 +236,6 @@ public class DeathGame extends JavaPlugin
 					{
 						cs.sendMessage(ChatColor.RED + "You can't use this command!");
 					}
-				}
-				
-				if(args[0].equalsIgnoreCase("update"))
-				{
-					update.forceUpdate();
 				}
 			}
 		}
